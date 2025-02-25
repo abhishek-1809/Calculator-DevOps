@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    docker.build'calculator', '.')
+                    docker.build('calculator', '.')
                 }
             }
         }
