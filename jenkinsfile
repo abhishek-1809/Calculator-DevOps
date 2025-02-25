@@ -5,7 +5,7 @@ pipeline {
    }
     environment {
         DOCKER_IMAGE_NAME = 'calculator'
-        GITHUB_REPO_URL = 'https://github.com/abhishek-1809/calculator.git'
+        GITHUB_REPO_URL = 'https://github.com/abhishek-1809/Calculator-DevOps.git'
     }
 
     stages {
@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Checkout the code from the GitHub repository
-                    git branch: 'main', url: "${GITHUB_REPO_URL}"
+                    git branch: 'main', url: "${https://github.com/abhishek-1809/Calculator-DevOps.git}"
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    docker.build("${DOCKER_IMAGE_NAME}", '.')
+                    docker.build("${calculator}", '.')
                 }
             }
         }
