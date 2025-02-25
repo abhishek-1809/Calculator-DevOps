@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Checkout the code from the GitHub repository
-                    git branch: 'main', url: "${https://github.com/abhishek-1809/Calculator-DevOps.git}"
+                    git branch: 'main', url: 'https://github.com/abhishek-1809/Calculator-DevOps.git'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Build Docker image
-                    docker.build("${calculator}", '.')
+                    docker.build("${DOCKER_IMAGE_NAME}", '.')
                 }
             }
         }
