@@ -1,7 +1,7 @@
 import math
 
 def display_menu():
-    print("\nScientific Calculator Menu:")
+    print("\nMenu:")
     print("1. Square root")
     print("2. Factorial")
     print("3. Natural logarithm")
@@ -33,13 +33,14 @@ def main():
                 print("Error: Natural logarithm is not defined for non-positive numbers.")
             else:
                 print(f"Natural logarithm of {x} is {math.log(x)}")
+                
         elif choice == '4':
             x = float(input("Enter the base (x): "))
             b = float(input("Enter the exponent (b): "))
             print(f"{x} raised to the power of {b} is {math.pow(x, b)}")
           
         elif choice == '5':
-            print("Exiting the calculator. Goodbye!")
+            print("Exiting...")
             break
           
         else:
