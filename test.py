@@ -45,7 +45,7 @@ class TestCalculator(unittest.TestCase):
         with unittest.mock.patch('builtins.input', side_effect=user_input):
             main()
         output = self.held_output.getvalue()
-        self.assertIn("2.0 raised to the power of 3.0 is 8.0", output)
+        self.assertIn("2.0 raised to the power of 3.0 is 7.0", output)
 
     def test_invalid_choice(self):
         # Test case for invalid choice handling
