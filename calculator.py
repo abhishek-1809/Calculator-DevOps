@@ -1,17 +1,5 @@
 import math
 
-# def square_root(x):
-#     return math.sqrt(x)
-
-# def factorial(x):
-#     return math.factorial(x)
-
-# def natural_logarithm(x):
-#     return math.log(x)
-
-# def power_function(x, b):
-#     return math.pow(x, b)
-
 def display_menu():
     print("\nScientific Calculator Menu:")
     print("1. Square root")
